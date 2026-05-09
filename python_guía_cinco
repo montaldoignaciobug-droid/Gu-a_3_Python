@@ -1,0 +1,28 @@
+#Ejercicio 5
+#Pide dos valores booleanos al usuario (True/False como texto). Conviértelos a tipo bool. Luego
+#muestra el resultado de las operaciones lógicas AND y OR entre ellos. Usa condicionales para
+#validar la entrada.
+
+print("\n==============================================\n")
+print("OPERACIONES BOOLEANAS\n")
+
+booleano_1 = input("Ingrese un booleano (True/False): ").title()
+booleano_2 = input("Ingrese otro booleano (True/False): ").title()
+
+if booleano_1 == "True":
+    v1 = True
+else:
+    v1 = False
+
+if booleano_2 == "False":
+    v2 = False
+else:
+    v2 = True
+
+resultado_and = v1 and v2
+resultado_or = v1 or v2
+
+print(f"AND: {v1} AND {v2} = {resultado_and}")
+print(f"OR: {v1} or {v2} = {resultado_or}")
+
+print("\n==============================================\n")
